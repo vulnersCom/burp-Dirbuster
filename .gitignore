@@ -1,0 +1,11 @@
+/.idea
+/burp-idea.iml
+/target/burp-zn-2015-1.0-SNAPSHOT.jar
+/out
+/target/maven-archiver
+/target/generated-sources
+/target/maven-status
+/target/surefire
+/target/burp-zn-2015-1.0.jar
+/target/classes
+/target/archive-tmp

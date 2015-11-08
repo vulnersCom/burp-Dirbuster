@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="refresh" content="50000">
+
+<head>
+    <title>VICTIM.COM</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <script type="text/javascript" src="/static/jquery-1.11.2.js"></script>
+    <style type="text/css">
+        body {
+            margin: 20px;
+        }
+        .form-submit {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Welcome to VICTIM.COM</h4>
+    <h2> Submit form with CSRF-token </h2>
+    <form class="form-submit" csrfToken="thisIsMySecretRandomToken" name="form1">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Check me out
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <h2> Submit form w/o CSRF-token </h2>
+    <form class="form-submit" name="form2">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Check me out
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+    <!-- JS a little bit -->
+    <script type="text/javascript">
+        $('#email').html(location.hash.split('#')[1]);
+    </script>
+</body>
+
+</html>

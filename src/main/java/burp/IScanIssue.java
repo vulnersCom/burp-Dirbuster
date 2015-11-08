@@ -115,6 +115,6 @@ public interface IScanIssue
      *
      * @return The HTTP service for which the issue was generated.
      */
-    IHttpService getLHHttpService();
+    IHttpService getHttpService();
 
 }
