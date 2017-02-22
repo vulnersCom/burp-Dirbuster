@@ -15,12 +15,12 @@ public class BurpExtender implements IBurpExtender {
         /**
          * Register HTTP LISTENER for handling CSRF token responses
          */
-        callbacks.registerHttpListener(new TokenHandler(callbacks));
+//        callbacks.registerHttpListener(new TokenHandler(callbacks));
 
         /**
          * Register CSRF-Token form Scanner check
          */
-        callbacks.registerScannerCheck(new CSRFTokenScanner(callbacks));
+//        callbacks.registerScannerCheck(new CSRFTokenScanner(callbacks));
 
         /**
          * Register SSRF Scanner check

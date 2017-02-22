@@ -85,7 +85,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="/home/ivan/DEV/DirBuster-0.12/directory-list-lowercase-2.3-small.txt"/>
+          <text value="path_to_dictionary"/>
         </properties>
       </component>
       <component id="47b9e" class="javax.swing.JTextField" binding="tbxHost">
@@ -127,7 +127,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value=".html"/>
+          <text value=".php"/>
         </properties>
       </component>
       <component id="fb82a" class="javax.swing.JLabel">
